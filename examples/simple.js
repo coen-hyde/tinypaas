@@ -1,7 +1,5 @@
 var express = require('../node_modules/express')
-  , seaport = require('../node_modules/seaport')
-  , ports = seaport.connect(4500)
-  , paas = require('../')(ports);
+  , paas = require('../')();
 
 var app = express();
 

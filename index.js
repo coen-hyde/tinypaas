@@ -1,6 +1,17 @@
-var _ = require('lodash');
+var _ = require('lodash')
+  , seaport = require('seaport');
 
 var PAAS = module.exports = function(ports) {
+  // Connect to default tiny-paas seaport server
+  if (typeof ports === 'undefined') {
+    ports = seaport.connect(4500);
+  }
+
+  // Connect to specified seaport server
+  if (!_.isObject(ports)) {
+    ports = seaport.connect(ports);
+  }
+
   return {
     register: function(server, options, cb) {
       if (typeof options.name === 'undefined') {
