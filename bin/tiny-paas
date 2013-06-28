@@ -7,6 +7,8 @@ program
   .command('setup')
   .description('Setup tiny-paas on the system')
   .action(function(){
+    
+    
   });
 
 program

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "main": "index.js",
-    "start": "server.js"
+    "start": "node server.js"
   },
   "repository": "",
   "author": "",
@@ -13,6 +13,12 @@
   "dependencies": {
     "seaport": "~1.5.0",
     "commander": "~1.2.0",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "distribute": "~0.1.4",
+    "dockmaster": "~0.3.0",
+    "lodash": "~1.3.1"
+  },
+  "devDependencies": {
+    "express": "~3.3.1"
   }
 }
