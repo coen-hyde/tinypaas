@@ -5,7 +5,11 @@ var express = require('../node_modules/express')
 
 var app = express();
 
+app.get('/', function(req, res) {
+  res.send('testing');
+});
+
 paas.register(app, { 
   name:'example',
-  serverName: 'example.com'
+  serverName: 'local.host'
 });
