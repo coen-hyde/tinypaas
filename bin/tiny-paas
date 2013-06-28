@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+  , paas = require('../');
+
+program
+  .command('setup')
+  .description('Setup tiny-paas on the system')
+  .action(function(){
+  });
+
+program
+  .command('start app [app]')
+  .description('Setup an application deployed to tiny-paas')
+  .action(function(){
+    
+  });

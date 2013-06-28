@@ -1,0 +1,18 @@
+{
+  "name": "tiny-paas",
+  "version": "0.0.0",
+  "description": "A tiny PAAS for node.js applications",
+  "main": "index.js",
+  "scripts": {
+    "main": "index.js",
+    "start": "server.js"
+  },
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "seaport": "~1.5.0",
+    "commander": "~1.2.0",
+    "async": "~0.2.9"
+  }
+}
