@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
-var program = require('commander')
-  , paas = require('../');
+var fs = require('fs')
+  , program = require('commander');
 
 program
   .command('setup')
   .description('Setup tiny-paas on the system')
   .action(function(){
     
-    
   });
 
 program
   .command('start app [app]')
   .description('Setup an application deployed to tiny-paas')
-  .action(function(){
-    
+  .action(function(app){
+    var pid = 'paasPid';
+
+    fs.writeFileSync('/proc/'+pid+'/fd/0', app);
   });

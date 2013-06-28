@@ -1,0 +1,6 @@
+{
+  "ports": {
+    "router": 4500,
+    "seaport": 4501
+  }
+}
